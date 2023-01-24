@@ -1,0 +1,5 @@
+$bgcolor: coral;
+
+html {
+    background-color: lighten($bgcolor, 10);
+}

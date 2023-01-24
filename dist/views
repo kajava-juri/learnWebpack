@@ -1,0 +1,69 @@
+<head><script defer src="main.js"></script></head>Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module not found: Error: Can't resolve 'C:\Users\TA-20E-474\Desktop\github\lea  rnWebpack\src\views' in 'C:\Users\TA-20E-474\Desktop\github\learnWebpack'
+  ModuleNotFoundError: Module not found: Error: Can't resolve 'C:\Users\TA-20E-4  74\Desktop\github\learnWebpack\src\views' in 'C:\Users\TA-20E-474\Desktop\gith  ub\learnWebpack'
+      at C:\Users\TA-20E-474\Desktop\github\learnWebpack\node_modules\webpack\li  b\Compilation.js:2016:28
+      at C:\Users\TA-20E-474\Desktop\github\learnWebpack\node_modules\webpack\li  b\NormalModuleFactory.js:798:13
+      at eval (eval at create (C:\Users\TA-20E-474\Desktop\github\learnWebpack\n  ode_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:10:1)
+      at C:\Users\TA-20E-474\Desktop\github\learnWebpack\node_modules\webpack\li  b\NormalModuleFactory.js:270:22
+      at eval (eval at create (C:\Users\TA-20E-474\Desktop\github\learnWebpack\n  ode_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:9:1)
+      at C:\Users\TA-20E-474\Desktop\github\learnWebpack\node_modules\webpack\li  b\NormalModuleFactory.js:434:22
+      at C:\Users\TA-20E-474\Desktop\github\learnWebpack\node_modules\webpack\li  b\NormalModuleFactory.js:116:11
+      at C:\Users\TA-20E-474\Desktop\github\learnWebpack\node_modules\webpack\li  b\NormalModuleFactory.js:670:25
+      at C:\Users\TA-20E-474\Desktop\github\learnWebpack\node_modules\webpack\li  b\NormalModuleFactory.js:855:8
+      at C:\Users\TA-20E-474\Desktop\github\learnWebpack\node_modules\webpack\li  b\NormalModuleFactory.js:975:5
+  
+  - Compilation.js:2016 
+    [learnWebpack]/[webpack]/lib/Compilation.js:2016:28
+  
+  - NormalModuleFactory.js:798 
+    [learnWebpack]/[webpack]/lib/NormalModuleFactory.js:798:13
+  
+  
+  - NormalModuleFactory.js:270 
+    [learnWebpack]/[webpack]/lib/NormalModuleFactory.js:270:22
+  
+  
+  - NormalModuleFactory.js:434 
+    [learnWebpack]/[webpack]/lib/NormalModuleFactory.js:434:22
+  
+  - NormalModuleFactory.js:116 
+    [learnWebpack]/[webpack]/lib/NormalModuleFactory.js:116:11
+  
+  - NormalModuleFactory.js:670 
+    [learnWebpack]/[webpack]/lib/NormalModuleFactory.js:670:25
+  
+  - NormalModuleFactory.js:855 
+    [learnWebpack]/[webpack]/lib/NormalModuleFactory.js:855:8
+  
+  - NormalModuleFactory.js:975 
+    [learnWebpack]/[webpack]/lib/NormalModuleFactory.js:975:5
+  
+  - child-compiler.js:169 
+    [learnWebpack]/[html-webpack-plugin]/lib/child-compiler.js:169:18
+  
+  - Compiler.js:551 finalCallback
+    [learnWebpack]/[webpack]/lib/Compiler.js:551:5
+  
+  - Compiler.js:577 
+    [learnWebpack]/[webpack]/lib/Compiler.js:577:11
+  
+  - Compiler.js:1196 
+    [learnWebpack]/[webpack]/lib/Compiler.js:1196:17
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [learnWebpack]/[tapable]/lib/Hook.js:18:14
+  
+  - Compiler.js:1192 
+    [learnWebpack]/[webpack]/lib/Compiler.js:1192:33
+  
+  - Compilation.js:2787 finalCallback
+    [learnWebpack]/[webpack]/lib/Compilation.js:2787:11
+  
+  - Compilation.js:3092 
+    [learnWebpack]/[webpack]/lib/Compilation.js:3092:11
+  
+  
+</pre>
