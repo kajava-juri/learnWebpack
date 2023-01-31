@@ -1,9 +1,6 @@
-console.log("Hello");
-
-const common = require("./common.js");
-common.hello("message");
-
-import es6 from "./es6.js";
-es6.hello("message");
-
-import "./styles.scss";
+console.log('hello webpack!');
+const common = require('./common.js');
+common.hello('hello');
+import es6 from './es6.js';
+es6.hello('hello');
+import './style.scss';

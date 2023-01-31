@@ -2,14 +2,13 @@ const path = require('path');
 const glob = require('glob');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-let htmlPlugins = glob.sync("./src/views/").map(templatePath => {
+
+let htmlPlugins = glob.sync('./src/views/*').map(templatePath => {
     return new HtmlWebpackPlugin({
         template: templatePath,
-        filename: path.parse(templatePath).base,
+        filename: path.parse(templatePath).name + '.html',
     });
 });
-
-console.log(htmlPlugins);
 
 module.exports = {
     entry: './src/index.js',
@@ -26,27 +25,21 @@ module.exports = {
     },
     module: {
         rules: [
-          {
-            test: /\.css$/i,
-            use: ["style-loader", "css-loader"],
-          },
-          {
-            test: /\.s[ac]ss$/i,
-            use: ["style-loader","css-loader" , "sass-loader"],
-          },
+            {
+                test: /\.css$/i,
+                use: ["style-loader","css-loader"],
+            },
+            {
+                test: /\.s[ac]ss$/i,
+                use: ["style-loader","css-loader","sass-loader"],
+            },
+            {
+                test: /\.(njk|nunjucks)$/i,
+                use: ["simple-nunjucks-loader"],
+            },
         ],
     },
     plugins: [
-        new HtmlWebpackPlugin({
-            filename: "about.html",
-            template: "./src/views/about.html"
-        }),
-        new HtmlWebpackPlugin({
-            template: "./src/views/index.html"
-        }),
-        new HtmlWebpackPlugin({
-            filename: "contact.html",
-            template: "./src/views/contact.html"
-        })
+       ...htmlPlugins,
     ],
 };
